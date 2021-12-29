@@ -1,0 +1,6 @@
+name: DeathGM3
+main: me.timof121.deathgm3.Main
+author: timof121
+version: 1.0
+api-version: 1.18
+commands:
