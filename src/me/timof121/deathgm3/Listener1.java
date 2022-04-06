@@ -10,6 +10,8 @@ public class Listener1 implements Listener {
 	@EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
 		Player player = event.getEntity();
-		player.setGameMode(GameMode.SPECTATOR);
+		if (!player.hasPermission("deathgm3.bypass")) {
+			player.setGameMode(GameMode.SPECTATOR);
+		}
     }
 }
